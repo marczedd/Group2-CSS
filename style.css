@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    background:#F3F5F7;
+    color:#1F2A37;
+    line-height:1.6;
+}
+
+h1,h2,h3{
+    font-family:"Montserrat",sans-serif;
+}
+
+a{
+    text-decoration:none;
+}
+
+.header{
+    background:
+    linear-gradient(#074600bf,#074600bf),
+    url("assets/header-photo.png") center/cover;
+
+    color:white;
+    border-bottom:4px solid #E4CD00;
+    padding:18px 40px;
+}
+
+.header-content{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.logo{
+    width:60px;
+}
+
+.navbar{
+    background:#063B00;
+}
+
+.navbar ul{
+    list-style:none;
+    display:flex;
+    justify-content:flex-end;
+    flex-wrap:wrap;
+}
+
+.navbar a{
+    display:block;
+    padding:15px 18px;
+    color:white;
+}
+
+.navbar a:hover{
+    color:#E4CD00;
+}
+
+.logout{
+    background:#2E5E32;
+}
+
+.logout:hover{
+    background:#E4CD00;
+    color:#063B00 !important;
+}
+
+.container{
+    max-width:1000px;
+    margin:40px auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:35px;
+}
+
+.profile-card{
+    background:white;
+    border:1px solid #D7DCE1;
+    border-radius:10px;
+    padding:25px;
+    text-align:center;
+}
+
+.avatar{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:8px;
+    margin:0 auto 15px;
+}
+
+.student-id{
+    color:#1f2a37a1;
+    margin-bottom:18px;
+    font-size: 14px;
+}
+
+.profile-info{
+    text-align:left;
+    border-top:1px solid #D7DCE1;
+    padding-top:18px;
+}
+
+.profile-info p{
+    margin-bottom:12px;
+}
+
+.highlight{
+    background:#2E5E32;
+    color:white;
+    padding:4px 10px;
+    border-radius:5px;
+}
+
+.content h2{
+    margin-bottom:15px;
+}
+
+.content p{
+    color:#1F2A37;
+    margin-bottom:18px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin:25px 0;
+}
+
+.stat-box{
+    background:white;
+    border:1px solid #D7DCE1;
+    border-radius:8px;
+    padding:20px;
+    text-align:center;
+}
+
+.stat-box h3{
+    color:#063B00;
+    font-size: 28px;
+}
+
+.button{
+    display:inline-block;
+    background:#2E5E32;
+    color:white;
+    padding:12px 22px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#E4CD00;
+    color:#063B00;
+}
+
+.footer{
+    background:#063B00;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    font-family:"Jost",sans-serif;
+}
+
+@media(max-width:768px){
+    .container{
+        grid-template-columns:1fr;
+    }
+    .header-content{
+        flex-direction:column;
+        text-align:center;
+    }
+    .navbar ul{
+        justify-content:center;
+    }
+    .stats{
+        grid-template-columns:1fr;
+    }
+}
