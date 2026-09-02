@@ -185,3 +185,22 @@ a{
         grid-template-columns:1fr;
     }
 }
+#header {
+    color: navy;
+}
+
+p {
+    color: green;
+}
+
+.content {
+    color: #1F2A37;
+}
+
+.example {
+    color: blue;
+}
+
+.example {
+    color: red;
+}
