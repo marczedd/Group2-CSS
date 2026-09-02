@@ -4,12 +4,19 @@
     box-sizing:border-box;
 }
 
+html, body{
+    height:100%;
+}
+
 body{
     font-family: "Jost", sans-serif;
     font-weight: 400;
     background:#F3F5F7;
     color:#1F2A37;
     line-height:1.6;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
 }
 
 h1,h2,h3{
@@ -20,11 +27,16 @@ a{
     text-decoration:none;
 }
 
+i[data-lucide]{
+    width:16px;
+    height:16px;
+    vertical-align:-3px;
+}
+
 .header{
     background:
     linear-gradient(#074600bf,#074600bf),
     url("assets/header-photo.png") center/cover;
-
     color:white;
     border-bottom:4px solid #E4CD00;
     padding:18px 40px;
@@ -52,7 +64,9 @@ a{
 }
 
 .navbar a{
-    display:block;
+    display:flex;
+    align-items:center;
+    gap:8px;
     padding:15px 18px;
     color:white;
 }
@@ -71,16 +85,19 @@ a{
 }
 
 .container{
-    max-width:1000px;
+    flex:1;
+    max-width:1100px;  
     margin:40px auto;
     padding:0 20px;
     display:grid;
-    grid-template-columns:280px 1fr;
+    grid-template-columns:360px 1fr;  
     gap:35px;
+    width:100%;
 }
 
 .profile-card{
     background:white;
+    width:100%;
     border:1px solid #D7DCE1;
     border-radius:10px;
     padding:25px;
@@ -108,7 +125,15 @@ a{
 }
 
 .profile-info p{
+    display:flex;
+    align-items:flex-start;
+    gap:8px;
     margin-bottom:12px;
+}
+
+.profile-info p i{
+    margin-top:4px;
+    flex-shrink:0;
 }
 
 .highlight{
@@ -142,13 +167,21 @@ a{
     text-align:center;
 }
 
+.stat-box i{
+    width:20px;
+    height:20px;
+    margin-bottom:6px;
+}
+
 .stat-box h3{
     color:#063B00;
     font-size: 28px;
 }
 
 .button{
-    display:inline-block;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
     background:#2E5E32;
     color:white;
     padding:12px 22px;
@@ -166,8 +199,14 @@ a{
     color:white;
     text-align:center;
     padding:20px;
-    margin-top:40px;
     font-family:"Jost",sans-serif;
+}
+
+.footer p{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
 }
 
 @media(max-width:768px){
@@ -184,23 +223,4 @@ a{
     .stats{
         grid-template-columns:1fr;
     }
-}
-#header {
-    color: navy;
-}
-
-p {
-    color: green;
-}
-
-.content {
-    color: #1F2A37;
-}
-
-.example {
-    color: blue;
-}
-
-.example {
-    color: red;
 }
