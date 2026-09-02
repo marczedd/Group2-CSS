@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="assets/plmun-logo.png" alt="PLMun Logo" class="logo">
+            <div>
+                <h1>Pamantasan ng Lungsod ng Muntinlupa</h1>
+                <p>Student Portal</p>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home"><i data-lucide="home"></i> Home</a></li>
+            <li><a href="#ecog"><i data-lucide="file-text"></i> eCOG</a></li>
+            <li><a href="#consultation"><i data-lucide="message-circle"></i> e-Consultation</a></li>
+            <li><a href="#courses"><i data-lucide="book-open"></i> Courses</a></li>
+            <li><a href="#profile-card"><i data-lucide="user"></i> Profile Card</a></li>
+            <li><a href="#support"><i data-lucide="life-buoy"></i> Support</a></li>
+            <li><a href="#" class="logout"><i data-lucide="log-out"></i> Log Out</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <aside class="profile-card">
+            <img src="assets/avatar.png" alt="Student Avatar" class="avatar">
+            <h2>Wonu</h2>
+            <p class="student-id">Student ID: 20260831</p>
+            <div class="profile-info">
+                <p><i data-lucide="graduation-cap"></i> <strong>Program:</strong> Bachelor of Science in Computer Science</p>
+                <p><i data-lucide="building-2"></i> <strong>College:</strong> College of Information Technology and Computer Studies</p>
+                <p><i data-lucide="calendar"></i> <strong>Year:</strong> 3rd Year</p>
+                <p><i data-lucide="calendar-days"></i> <strong>Semester:</strong> 1st Semester</p>
+                <p><i data-lucide="badge-check"></i> <strong>Standing:</strong> <span class="highlight">Regular</span></p>
+            </div>
+        </aside>
+
+        <section class="content">
+            <h2>Welcome Back, Wonu!</h2>
+            <p>This portal gives you quick access to your grades,
+            course schedule, and student support services. Use the navigation
+            bar above to explore the different sections of your account.</p>
+            <div class="stats">
+                <div class="stat-box">
+                    <i data-lucide="book-marked"></i>
+                    <h3>21</h3>
+                    <p>Units</p>
+                </div>
+                <div class="stat-box">
+                    <i data-lucide="star"></i>
+                    <h3>1.33</h3>
+                    <p>Cumulative GPA</p>
+                </div>
+            </div>
+            <p>You may access your complete grades below.</p>
+            <a href="#ecog" class="button"><i data-lucide="eye"></i> View eCOG</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p><i data-lucide="copyright"></i> 2026 Pamantasan ng Lungsod ng Muntinlupa</p>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+    </script>
+
+</body>
+</html>
